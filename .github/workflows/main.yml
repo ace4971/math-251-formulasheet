@@ -23,9 +23,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: LaTeX compilation
-        # You may pin to the exact commit or the version.
-        # uses: dante-ev/latex-action@259e5ff953ad4d4616fbd09cc87a526ee5c4499a
-        uses: dante-ev/latex-action@v0.2.0
+        uses: u-cheng/latex-action@v2
         with:
           # The root LaTeX file to be compiled
           root_file: distributions.tex
@@ -37,3 +35,7 @@ jobs:
 #           args: # optional, default is -pdf -latexoption=-file-line-error -latexoption=-interaction=nonstopmode
           # Install extra packages by apt-get
 #           extra_system_packages: # optional
+      - uses: actions/upload-artifact@v2
+        with:
+          name: distributions
+          path: distributions.pdf
