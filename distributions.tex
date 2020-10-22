@@ -5,8 +5,8 @@
 
 \begin{document}
 % \setlength{\mathindent}{0pt}
-
-\section{how to tell between the distributions?}
+\section{Distributions}
+\subsection{how to tell between the distributions?}
 
 generallly counting processes are discrete (how many coin flips)
 
@@ -14,7 +14,7 @@ amount of time, speed, height, continuous/interval processes are continuous. mea
 
 
 
-\section{Geometric}
+\subsection{Geometric}
 Discrete
 
 "how many flips until first success"
@@ -23,11 +23,11 @@ $E[k, p] = \dfrac{1-p}{p}$ or $\dfrac{1}{p}$
 
 $\sigma = \dfrac{1-p}{p^2}$
 
-\subsection{PMF}
+\subsubsection{PMF}
 $Geo(k, p) = (1-p)^{k-1}p$
 
-\section{Bernoulli}
-\section{Binomial}
+\subsection{Bernoulli}
+\subsection{Binomial}
 Discrete
 
 \begin{align*}
@@ -35,23 +35,23 @@ Discrete
 	Var(x) = np(1-p)
 \end{align*}
 
-\subsection{PMF}
+\subsubsection{PMF}
 $bin(x=k,n,p) = {N\choose k} p^k(1-p)^n-k$
 
 assumes resilts are independent and identically distributed
 
 
-\section{Negative Binomial}
-\section{Poisson}
+\subsection{Negative Binomial}
+\subsection{Poisson}
 Discrete
 
 mean arrival rate ($\mu$) is usually given
 
 $\sigma = \sqrt{\mu}$
 
-\subsection{PDF}
+\subsubsection{PDF}
 $p_x(k;\mu) = p(X=k; \mu) = \dfrac{e^{-\mu}\mu^k}{k!}$, for $k = 0,1,2...$
-\section{Uniform}
+\subsection{Uniform}
 
 \begin{align*}
 	f(x) &= \dfrac{1}{(b-a)}, \text{for $a \le x \le b$}\\
@@ -60,7 +60,7 @@ $p_x(k;\mu) = p(X=k; \mu) = \dfrac{e^{-\mu}\mu^k}{k!}$, for $k = 0,1,2...$
 	Var(x) &=\dfrac{(b-a)^2}{12}
 \end{align*}
 
-\section{Normal}
+\subsection{Normal}
 
 median is $\mu$
 
@@ -71,12 +71,12 @@ median is $\mu$
 	E[x]_{continuous} &= \int_{-\infty}^{\infty} h(x) f(x) dx
 \end{align*}
 
-\subsection{PDF}
+\subsubsection{PDF}
 $f(x) = \dfrac{1}{\sigma\sqrt{2\pi}}e^{(\dfrac{-(x-\mu)^2}{2\sigma^2})}$
-\subsection{CDF}
+\subsubsection{CDF}
 $F(x) = $
 
-\subsection{Standardizing}
+\subsubsection{Standardizing}
 a random variable following the standard normal distribution $\Phi$ has $\mu = 0$ and $\sigma = 1$ and is often represented by the letter $Z$.
 
 This can be converted to/from a non-standard normal using these formulas:
@@ -87,7 +87,7 @@ $Z = \dfrac{X-\mu}{\sigma}$
 $X = (Z \sigma) + \mu$
 
 
-\section{Exponential}
+\subsection{Exponential}
 
 
 $
@@ -98,10 +98,10 @@ f(x)=\begin{cases}
 $
 
 $ F(x)=1-e^{-\lambda x} $
-\section{Gamma}
+\subsection{Gamma}
 
 
-\section{Sample Means}
+\subsection{Sample Means}
 
 $\sigma$ - Population standard deviation
 
