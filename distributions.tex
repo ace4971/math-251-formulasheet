@@ -40,13 +40,12 @@ $p_x(k;\mu) = p(X=k; \mu) = \dfrac{e^{-\mu}\mu^k}{k!}$, for $k = 0,1,2...$
 
 median is $\mu$
 
-$\mu_{discrete} = \sum_{x \in D} x p(x)$
-
-$E[x]_{discrete} = \sum_{x \in D} h(x) p(x)$
-
-$\mu_{continuous} = \int_{-\infty}^{\infty} x f(x) dx$
-
-$E[x]_{continuous} = \int_{-\infty}^{\infty} h(x) f(x) dx$
+\begin{align*}
+	\mu_{discrete} &= \sum_{x \in D} x p(x)\\
+	E[x]_{discrete} &= \sum_{x \in D} h(x) p(x)\\
+	\mu_{continuous} &= \int_{-\infty}^{\infty} x f(x) dx\\
+	E[x]_{continuous} &= \int_{-\infty}^{\infty} h(x) f(x) dx
+\end{align*}
 
 \subsection{PDF}
 $f(x) = \dfrac{1}{\sigma\sqrt{2\pi}}e^{(\dfrac{-(x-\mu)^2}{2\sigma^2})}$
@@ -88,9 +87,9 @@ $\overline{X}$ - Sample mean
 
 $T_0$ - Sample total
 
-
-$T_0 = n\mu$
-$Var(T_0) = \sqrt{n\sigma} $
-
+\begin{align*}
+T_0 &= n\mu\\
+Var(T_0) &= \sqrt{n\sigma}
+\end{align*}
 
 \end{document}
