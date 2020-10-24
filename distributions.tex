@@ -98,6 +98,35 @@ f(x)=\begin{cases}
 $
 
 $ F(x)=1-e^{-\lambda x} $
+
+
+\subsection{Weibull}
+
+$\alpha$ - shape
+$\beta$ - scale
+
+$E[X] = \beta\Gamma(1+\dfrac{1}{\alpha})$
+$Var(X) = \beta^2[\Gamma(1+\dfrac{2}{\alpha})-[\Gamma(1+\dfrac{1}{\alpha})]^2]$
+
+\subsubsection{PDF}
+
+$
+f(x)=\begin{cases}
+\dfrac{\alpha}{\beta^\alpha}x^{\alpha-1}e^{-(x/\beta)^\alpha}, & \text{for $x\ge0$}.\\
+0, & \text{for $x<0$}.
+\end{cases}
+$
+
+\subsubsection{CDF}
+
+$
+f(x)=\begin{cases}
+1-e^{-(x-\beta)^\alpha}, & \text{for $x\ge0$}.\\
+0, & \text{for $x<0$}.
+\end{cases}
+$
+
+
 \subsection{Gamma}
 
 
